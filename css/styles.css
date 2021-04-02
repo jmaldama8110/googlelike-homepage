@@ -1,10 +1,31 @@
-* {
-    font-family: 'Open Sans', sans-serif;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+ hr{
+     color: #70757a;
+ }
+
+body {
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    margin: 0;
+}
+
+p {
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
 }
 
 .head-content {
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
+    margin-right: 30px;
 }
 
 .head-content p {
@@ -44,35 +65,46 @@
     padding: 1em;
 }
 
-
-.input-container {
-    
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(231, 229, 229);
-    
-     
+.lupa {
+    position: relative;
+    left: 0.5em;
+    top: 0.5em;
+    width: 17px;
+    height: auto;
 }
 
- .input-centro {
+
+.input-centro {
+    position: relative;
 
     border-style: solid;
     border-color: rgb(231, 229, 229);
     border-width: 1px;
     border-radius: 24px;
     
-    height: 2em;
-    margin: 15px 50px 15px 50px;
+    height: 3em;
+    
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: transparent;
+    max-width: 550px;
+ }
+ .input-centro:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
  }
 
 
 .inputbox {
-    border-color: gray;
-    border-width: 1px;
-    border-style: solid;
+    position: relative;
+    top: 3px;
+    left: 1em;
     
-    height: 2em;
-    margin: 15px;
+    width: 84%;
+    border-style: none;
+    height: 80%;
+    /* height: 2em;
+    margin: 15px; */
     
     
 }
@@ -81,4 +113,25 @@
     
 }
 
+.piepagina-container {
+    display: flex;
+    justify-content: space-between;
+}
 
+.piepagina-izq {
+    display: flex;
+}
+.piepagina-der {
+    display: flex;    
+}
+
+
+.footer {
+    background-color: #e5e8eb;
+    color: #70757a;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%
+    
+}
